@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "name": "CONVERT_TO_MARKDOWN",
+      "description": "Convert a file to Markdown format",
+      "pricePerEvent": 0.01
+    },
+    {
+      "name": "TOOL_LIST",
+      "description": "List available tools",
+      "pricePerEvent": 0.0001
+    },
+    {
+      "name": "RESOURCE_LIST",
+      "description": "List available resources",
+      "pricePerEvent": 0.0001
+    },
+    {
+      "name": "RESOURCE_READ",
+      "description": "Read a resource",
+      "pricePerEvent": 0.001
+    },
+    {
+      "name": "PROMPT_LIST",
+      "description": "List available prompts",
+      "pricePerEvent": 0.0001
+    },
+    {
+      "name": "PROMPT_GET",
+      "description": "Get a prompt",
+      "pricePerEvent": 0.001
+    }
+  ]
+}

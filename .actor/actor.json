@@ -1,0 +1,50 @@
+{
+  "actorSpecification": 1,
+  "name": "markitdown-mcp-server",
+  "title": "Markitdown MCP Server",
+  "description": "MCP server that converts various file formats (PDF, Word, Excel, PowerPoint, Images, Audio, HTML, etc.) to Markdown using Microsoft's Markitdown tool.",
+  "version": "1.0.0",
+  "meta": {
+    "templateId": "python-mcp-server"
+  },
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": ["timestamp", "tool", "status", "result"]
+          },
+          "display": {
+            "component": "table",
+            "properties": {
+              "timestamp": {
+                "label": "Timestamp",
+                "format": "date"
+              },
+              "tool": {
+                "label": "Tool"
+              },
+              "status": {
+                "label": "Status"
+              },
+              "result": {
+                "label": "Result"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "environmentVariables": {
+    "SESSION_TIMEOUT_SECS": {
+      "type": "integer",
+      "description": "Session timeout in seconds (default: 300)",
+      "default": 300,
+      "minimum": 60,
+      "maximum": 3600
+    }
+  }
+}
