@@ -39,10 +39,6 @@
     }
   },
   "environmentVariables": {
-    "SESSION_TIMEOUT_SECS": {
-      "type": "string",
-      "description": "Session timeout in seconds (default: 300)",
-      "default": "300"
-    }
+    "SESSION_TIMEOUT_SECS": "300"
   }
 }
